@@ -13,6 +13,3 @@ Um projeto simples para calcular o Índice de Massa Corporal (IMC) e fornecer re
 - **JavaScript** para lógica de interação.
 - **Chart.js** para geração de gráficos dinâmicos.
 
-## Como Executar
-   ```bash
-   git clone https://github.com/seu-usuario/nome-do-repo.git
