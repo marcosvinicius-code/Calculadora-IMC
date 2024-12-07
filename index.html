@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora de IMC - Saúde e Bem-Estar</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Calculadora de IMC</h1>
+      <form id="imc-form">
+        <div>
+          <label for="weight">Peso (kg):</label>
+          <input
+            type="number"
+            id="weight"
+            required
+            placeholder="Digite seu peso"
+          />
+        </div>
+        <div>
+          <label for="height">Altura (m):</label>
+          <input
+            type="number"
+            id="height"
+            step="0.01"
+            required
+            placeholder="Digite sua altura"
+          />
+        </div>
+        <button type="submit">Calcular IMC</button>
+      </form>
+
+      <div id="result" style="display: none">
+        <h2>Resultado</h2>
+        <p id="imc-value"></p>
+        <p id="imc-category"></p>
+        <p id="recommendations"></p>
+        <canvas id="imc-chart" width="400" height="200"></canvas>
+        <p id="activity-suggestions"></p>
+        <p id="diet-suggestions"></p>
+      </div>
+
+      <!-- Botão de alternância de tema -->
+      <button id="theme-toggle" class="theme-toggle-btn">🌙</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
